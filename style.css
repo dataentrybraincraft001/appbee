@@ -61,6 +61,8 @@ body{
     position: relative;
     transition: all linear 0.4s;
     z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .menu .menu-item ul li a::after{
     content: '';
@@ -68,9 +70,10 @@ body{
     width: 0;
     height: 3px;
     background-color: #fff;
-    top: 50%;
+    top: 40%;
     left: -20px;
     transition: all linear 0.2s;
+
 
 }
 .menu .menu-item ul li a:hover::after{
