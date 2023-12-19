@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clr{
+    clear: both;
+}
+
+a{
+    text-decoration: none;  
+}
+ul, ol{
+    list-style: none;
+}
+body{
+    font-family:'roboto', sans-serif;
+}
+.main-bg{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.logo{
+    width: 30%;
+    height: 100px;
+    float: left;   
+}
+.logo img{
+    margin: 30px auto;
+}
+.menu-item{
+    width: 70%;
+    height: 100px;
+    float: left;
+     
+}
+.menu .menu-item ul{
+    float: right;   
+}
+.menu .menu-item ul li{
+    display: inline-block;
+    position: relative;
+    
+          
+}
+.menu .menu-item ul li a{
+    font-size: 15px;  
+    line-height: 100px;
+    color:#ffff;
+    margin: 0 20px;
+    position: relative;
+    transition: all linear 0.4s;
+    z-index: 1;
+}
+.menu .menu-item ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    top: 50%;
+    left: -20px;
+    transition: all linear 0.2s;
+
+}
+.menu .menu-item ul li a:hover::after{
+    width: 15px;  
+}
+/* .menu .menu-item ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(75, 72, 72, 0.5);
+    z-index: -1;
+    transition: all linear 0.5s;
+    border-radius: 5px;
+}
+.menu .menu-item ul li  a:hover::before{
+    width: 100%;
+} */
+
+/* menu 2nd start */
+.menu .menu-item ul li ul{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.4s;
+    border-left: 5px solid rgb(124,66,149);
+    transform: translateX(-50);
+    width: 180px;
+    text-align: center;
+    padding-bottom: 1px;
+    border-radius: 8px;
+    margin-top: -38px;
+         
+}
+.menu .menu-item ul li ul li{
+    display: block;
+    
+
+}
+.menu .menu-item ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+        
+}
+.menu .menu-item ul li:hover ul a{
+    color: #fff;
+}
+.menu .menu-item ul li ul li a{
+    line-height: 50px;
+    display: inline-block; 
+    margin: 0;
+    border-bottom: 3px solid transparent;
+    
+ 
+}
+.menu .menu-item ul li ul li a:hover{
+    border-bottom: 3px solid #fff;
+
+    
+}
+/* menu 2nd end */
+
+/* menu 3rd start */
+.menu .menu-item ul li ul li ul{
+    left: 100%;
+    border-left: 5px solid rgb(124,66,149);
+    text-align: center;
+    transform: translateX(50);
+   
+}
+
+/* menu 3rd end */
+/* menu banner start */
+section{
+    background: rgb(124,66,149);
+    background: linear-gradient(100deg, rgba(124,66,149,1) 0%, rgba(215,38,53,1) 100%);
+    height: 100vh;
+}
+.banner1{
+    padding-top:100px ;
+    
+}
+.banner1 .banner-text{
+    width: 65%;
+    float: left;
+ 
+}
+.banner1 .banner-img{
+    width: 35%;
+    float: left;
+}
+h1{
+    font-size: 78px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+}
+.app{
+    font-weight: 600;  
+}
+h2{
+    color: #fff;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 50px;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+i{
+    padding-right: 10px;
+}
+.banner-text a{
+    width: 60px;
+    height: 50px;
+    background: rgb(124,66,149);
+    background: linear-gradient(100deg, rgba(124,66,149,1) 0%, rgba(215,38,53,1) 100%);
+    padding: 17px 35px;
+    color: #fff;
+    border-radius: 30px;
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 10px 20px 0px rgba(56, 56, 56, 0.25);
+    position: relative;  
+    transition: all linear 0.4s;
+    top: 0;
+}
+.banner-text a:hover{
+    /* margin-top: -25px; */
+    top: -10px;
+}
+/* menu banner end */
