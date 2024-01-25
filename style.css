@@ -26,7 +26,7 @@ body{
     
 }
 .container{
-    width:1200px;
+    max-width:1350px;
     margin: 0 auto;
     
 }
@@ -153,21 +153,40 @@ body{
 .banner{
     background: rgb(124,66,149);
     background: linear-gradient(100deg, rgba(124,66,149,1) 0%, rgba(215,38,53,1) 100%);
-    height: 100%;
-}
-.banner1{
-    padding-top:200px ;
+    height: 100vh;
     
 }
+/* .banner1{
+    
+ 
+} */
 .banner1 .banner-text{
     width: 65%;
     float: left;
- 
+    padding-top:200px ;
 }
 .banner1 .banner-img{
     width: 35%;
     float: left;
+    padding-top:90px;
+    animation: move 2s 2s infinite alternate linear;
 }
+.banner1 .banner-img:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes move{
+    from{
+        padding-top:100px;
+    }
+    to{
+        padding-top:160px;
+    }
+}
+
+
+
 h1{
     font-size: 78px;
     font-weight: 500;
@@ -265,18 +284,26 @@ h4{
 }
 /* icon banner end */
 /* banner3 start */
+.about{
+    background: rgb(124,66,149);
+    background: linear-gradient(100deg, rgba(124,66,149,1) 0%, rgba(215,38,53,1) 100%);
+    
+}
 .banner3{
     background-image: url("./image/about-patter.png");
     background-repeat: no-repeat;
     background-position:left top ;
+    
 }
 .banner1 .banner-text1{
     width: 65%;
     float: left;
+    padding-top: 50px;
 }
 .banner1 .banner-img1{
     width: 35%;
     float: left;
+    padding-top: 50px;
     
 }
 .banner1 .banner-img1 img{
@@ -325,3 +352,221 @@ h2{
     color: #7e7e7e;
 }
 /* banner3 end */
+/* tutorial start */
+.tutorial{
+    padding-top:150px;
+    background-color:#fff;
+}
+.tutorial .sec-head .sec-heading{
+    font-size: 40px;
+    color: #494949;
+    line-height:1.5;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+}
+.tutorial .sec-head{
+    text-align: center;
+
+
+}
+.tutorial .sec-head p{
+    width: 50%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #7e7e7e;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.tutorial .vid{
+    background: rgb(124,66,149);
+    background: linear-gradient(100deg, rgba(124,66,149,1) 0%, rgba(215,38,53,1) 100%);
+    width: 970px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.tutorial .vid .vid-overlay{
+    width: 100%;
+    height: 517px;
+    display: table;
+    box-shadow: 0px 10px 20px 0px rgba(56, 56, 56, 0.25);
+
+}
+.tutorial .vid .vid-overlay a {
+    font-size: 50px;
+    color: #fff;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+/* .tutorial .vid .vid-overlay a img {
+mar
+} */
+.works{
+    background-color: #f6f6f6;
+    
+}
+
+.works{
+    
+    margin-top:-150px;
+}
+.works .steps{
+    height: 700px;
+    text-align: center;
+    padding-top: 250px;
+    
+
+
+}
+.works .steps1{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    margin-right: 3%;
+    padding: 60px 30px;
+    box-shadow: 0px 10px 20px 0px rgba(56, 56, 56, 0.25);
+}
+.works .steps2{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    margin-right: 3%;
+    padding: 60px 30px;
+    box-shadow: 0px 10px 20px 0px rgba(56, 56, 56, 0.25);
+}
+.works .steps3{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    margin-right: 3%;
+    padding: 60px 30px;
+    box-shadow: 0px 10px 20px 0px rgba(56, 56, 56, 0.25);
+    
+}
+/* tutorial end */
+
+/* <!-- Popular Features strat --> */
+.feature{
+    padding-top: 10px;
+    
+}
+
+
+.feature .sec-head .sec-heading{
+    font-size: 40px;
+    color: #494949;
+    line-height:1.5;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+.feature .sec-head{
+    text-align: center;
+
+
+}
+.feature .sec-head p{
+    width: 50%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #7e7e7e;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.ftr-coll1{
+    width:40%;
+    float: left;
+
+}
+.ftr-coll1 img{
+    width: 90%;
+}
+.ftr-coll2, .ftr-coll3{
+    padding-top: 50px;
+    width:30%;
+    float: left;
+}
+.feature-text h5{
+    color: #494949;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+}
+.feature-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #7e7e7e;
+    font-weight: 600;
+}
+.feature-item{
+    padding: 10PX;
+    margin-bottom:50px;
+
+}
+.feature-icon{
+    width:20%;
+    float: left;
+    color: rgb(252, 40, 40);
+}
+.feature-icon i{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(124,66,149);
+    background: linear-gradient(100deg, rgba(124,66,149,1) 0%, rgba(215,38,53,1) 100%);
+    padding-left:10px;
+    padding-top:7px;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-icon i::after{
+    content: '';
+    position: absolute;
+    top:4%;
+    left:5%;
+    width: 92%;
+    height: 92%;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index:-1;
+    transition: all linear 0.2s;
+
+
+
+}
+.feature-item:hover .feature-icon i::after{
+    background-color: transparent;
+    
+
+
+}
+.feature-item:hover .feature-icon i{
+    color: #fff;
+}
+
+
+
+.feature-text{
+    width:80%;
+    float: left;
+
+}
+
+
+
+/* <!-- Popular Features end --> */
+
+
+
