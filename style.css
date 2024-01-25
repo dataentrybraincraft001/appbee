@@ -453,6 +453,7 @@ mar
 /* <!-- Popular Features strat --> */
 .feature{
     padding-top: 10px;
+    height: 900px;
     
 }
 
@@ -563,10 +564,51 @@ mar
     float: left;
 
 }
-
-
-
 /* <!-- Popular Features end --> */
+/* <!-- Active start --> */
+
+#Active-Users{
+    background: rgb(124,66,149);
+    background: linear-gradient(100deg, rgba(124,66,149,1) 0%, rgba(215,38,53,1) 100%);
+}
+.Actives{
+    height: 450px;
+    padding-top: 200px;
+    text-align: center;
+    
+    
+}
+.Actives h4{
+    color: #fff;
+    padding-top: 30px;
+}
+.Actives p{
+    color: #fff;
+}
+.Actives i{
+    color: #fff;
+    font-size: 80px;
+    padding-left: 16px;
+}
+
+.Actives1{
+    width: 25%;
+    float: left;
+}
+.Actives2{
+    width: 25%;
+    float: left;
+}
+.Actives3{
+    width: 25%;
+    float: left;
+}
+.Actives4{
+    width: 25%;
+    float: left;
+}
+
+/* <!-- Active end --> */
 
 
 
